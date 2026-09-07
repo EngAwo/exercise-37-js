@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple post </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1> Simple Blog</h1>
+        </header>
+
+        <!-- Add/Edit Post Form -->
+        <section class="post-form">
+            <h2 id="formTitle">Add New Post</h2>
+
+            <form id="postForm">
+
+                <div class="form-group">
+                    <label for="postTitle">Post Title</label>
+                    <input
+                        type="text"
+                        id="postTitle"
+                        placeholder="Enter post title"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="imageUrl">Image URL</label>
+                    <input
+                        type="url"
+                        id="imageUrl"
+                        placeholder="Image URL (Optional)"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="postContent">Post Content</label>
+                    <textarea
+                        id="postContent"
+                        placeholder="Write your blog post..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="add-btn" id="submitBtn">
+                    Add Post
+                </button>
+
+                <button
+                    type="button"
+                    class="cancel-btn"
+                    id="cancelBtn"
+                    style="display: none;"
+                >
+                    Cancel
+                </button>
+
+            </form>
+        </section>
+
+        <!-- Blog Posts -->
+        <section id="posts" class="posts"></section>
+
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+
+</html>
